@@ -16,6 +16,12 @@
 
                     You are logged in!
                 </div>
+
+                <form action="/home/file" method="post" enctype="multipart/form-data">
+                    {{ csrf_field() }}
+                    <input type="file" name="file">
+                    <button type="submit">保存</button>
+                </form>
             </div>
         </div>
     </div>
